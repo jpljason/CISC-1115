@@ -15,5 +15,6 @@ public class GradeCalculator {
         finalGrade = keyboard.nextInt();
         totalGrade = (int)(homeWork * 0.15 + codeLab * 0.10 + midTerm_1 * 0.20 + midTerm_2 * 0.20 + finalGrade * 0.35);
         System.out.println("Your total grade for the class is " + totalGrade + "%");
+        keyboard.close();
     }
 }
