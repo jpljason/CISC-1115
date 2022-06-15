@@ -32,7 +32,7 @@ public class Transactions{
       output.printf("The total tax is $%.2f\n", tax);
       output.printf("The highest price item is #%d at $%.2f\n", skuOfHighestPrice, highestPrice);
       output.printf("The lowest price item is #%d at $%.2f\n", skuOfLowestPrice, lowestPrice);
-      System.out.println("Program complete"); //Shows the program has successfully finished in the console
+      System.out.println("Program complete, data sent to outputfile.txt"); //Shows the program has successfully finished in the console
       input.close();
       output.close();
     }
