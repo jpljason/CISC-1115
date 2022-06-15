@@ -1,5 +1,5 @@
 Report from 04-01 to 04-29
 The total is $88.20
-The total tax is $23.68
-The highest price item is #777 at $5.25
-The lowest price item is #911 at $39.45
+The total tax is $7.83
+The highest price item is #911 at $39.45
+The lowest price item is #777 at $5.25
