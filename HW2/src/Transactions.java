@@ -11,6 +11,7 @@ public class Transactions{
       File inputfile = new File ("inputfile.txt");
       Scanner input = new Scanner(inputfile); //Reading data from another file
       PrintStream output = new PrintStream("outputfile.txt");
+      input.nextLine();
       while (input.hasNextLine()){
           date = input.next();
           sku = input.nextInt();
