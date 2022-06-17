@@ -5,15 +5,23 @@ public class Transactions{
  some various computations to calculate the total sum, tax, highest priced item and lowest priced item.
 */
     public static void main(String [] args) throws Exception {
-      String date = "";
+      String startDate = "", endDate = "";
       int sku = 0, skuOfHighestPrice = 0, skuOfLowestPrice = 0;
       double price = 0, discount = 0, totalSum = 0, tax=0, highestPrice = 0, lowestPrice = 10000000;
       File inputfile = new File ("inputfile.txt");
-      Scanner input = new Scanner(inputfile); //Reading data from another file
+      Scanner input = new Scanner(inputfile); //Used for reading SKU, price and discount of items from another file
+      Scanner dates = new Scanner(inputfile); //Used for reading dates of these items from the same file
       PrintStream output = new PrintStream("outputfile.txt");
-      input.nextLine();
+      dates.nextLine(); //skip the title of the file
+      startDate = dates.next(); //find the start date
+      dates.nextLine();
+      while (dates.hasNextLine()){
+          endDate = dates.next(); //find the end date
+          dates.nextLine();
+      }
+      input.nextLine(); //skip the title of the file
       while (input.hasNextLine()){
-          date = input.next();
+          input.next();
           sku = input.nextInt();
           price = input.nextDouble();
           discount = input.nextDouble();
@@ -28,7 +36,7 @@ public class Transactions{
           totalSum += price - discount; //algorithm to find the total amount after discounts
           tax = totalSum * 0.08875; //algorithm to find the amount for tax
       }
-      output.println("Report from 04-01 to 04-29");
+      output.println("Report from " + startDate + " to " + endDate);
       output.printf("The total is $%.2f\n", totalSum);
       output.printf("The total tax is $%.2f\n", tax);
       output.printf("The highest price item is #%d at $%.2f\n", skuOfHighestPrice, highestPrice);
@@ -36,5 +44,6 @@ public class Transactions{
       System.out.println("Program complete, data sent to outputfile.txt"); //Shows the program has successfully finished in the console
       input.close();
       output.close();
+      dates.close();
     }
 }
