@@ -24,7 +24,7 @@ public class Transactions{
           input.next();
           sku = input.nextInt();
           price = input.nextDouble();
-          discount = input.nextDouble();
+          discount = price * input.nextDouble() / 100;
           if (lowestPrice >= price - discount){ //algorithm to find the lowest priced item
               lowestPrice = price - discount; //price of this item
               skuOfLowestPrice = sku; //sku of this item
