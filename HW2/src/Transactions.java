@@ -1,9 +1,10 @@
 import java.util.Scanner;
 import java.io.*;
-public class Transactions{
 /*This program gathers data from transactions. Data includes date, SKU of item, price and discount of various items. It then does
- some various computations to calculate the total sum, tax, highest priced item and lowest priced item.
+ some various computations to find and calculate the start date to end date, total sum, tax, highest priced item and lowest priced
+ item.
 */
+public class Transactions{
     public static void main(String [] args) throws Exception {
       String startDate = "", endDate = "";
       int sku = 0, skuOfHighestPrice = 0, skuOfLowestPrice = 0;
@@ -24,7 +25,7 @@ public class Transactions{
           input.next();
           sku = input.nextInt();
           price = input.nextDouble();
-          discount = price * input.nextDouble() / 100;
+          discount = price * input.nextDouble() / 100; //formula for discount
           if (lowestPrice >= price - discount){ //algorithm to find the lowest priced item
               lowestPrice = price - discount; //price of this item
               skuOfLowestPrice = sku; //sku of this item
