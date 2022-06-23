@@ -20,6 +20,7 @@ public class Program3 {
 	  findAgeDifference(currentYear, currentMonth, currentDay, input);	//Find the age difference and print message
 	  input.close();
 	}
+	//Method to find the age difference of the record in years, months and days
 	public static void findAgeDifference(int currentYear, int currentMonth, int currentDay, Scanner input) {
 		String recordDate;	//Variable to read in dates from file
 		while (input.hasNext()) {
