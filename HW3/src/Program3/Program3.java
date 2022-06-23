@@ -14,11 +14,11 @@ public class Program3 {
 		File inputfile = new File("inputfile.txt");	//File to be scanned for data
 		Scanner input = new Scanner(inputfile);
 		String [] dateArray = findCurrentDate();	//Find the current date and insert values
-	    currentYear = Integer.parseInt(dateArray[0]);	//Assigning following variables according to their value of either year, month or day in the form of integers
-	    currentMonth = Integer.parseInt(dateArray[1]);
-	    currentDay = Integer.parseInt(dateArray[2]);
-	    findAgeDifference(currentYear, currentMonth, currentDay, input);	//Find the age difference and print message
-	    input.close();
+	  currentYear = Integer.parseInt(dateArray[0]);	//Assigning following variables according to their value of either year, month or day in the form of integers
+	  currentMonth = Integer.parseInt(dateArray[1]);
+	  currentDay = Integer.parseInt(dateArray[2]);
+	  findAgeDifference(currentYear, currentMonth, currentDay, input);	//Find the age difference and print message
+	  input.close();
 	}
 	public static void findAgeDifference(int currentYear, int currentMonth, int currentDay, Scanner input) {
 		String recordDate;	//Variable to read in dates from file
@@ -44,9 +44,9 @@ public class Program3 {
 	//Method used to find current date in the form of year/month/day, then splitting year, month and day into separate values and inserting into an array
 	public static String [] findCurrentDate(){
 		Date currentDate = new Date();
-	    SimpleDateFormat format = new SimpleDateFormat("yyyy/MM/dd");	//Format the date to year/month/day
-	    String date = format.format(currentDate);
-	    String [] dateArray = date.split("/");	//Split the values of the date
-	    return dateArray;
+	  SimpleDateFormat format = new SimpleDateFormat("yyyy/MM/dd");	//Format the date to year/month/day
+	  String date = format.format(currentDate);
+	  String [] dateArray = date.split("/");	//Split the values of the date
+	  return dateArray;
 	}
 }
