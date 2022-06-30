@@ -4,9 +4,11 @@ This program prompts the user to choose one of two shapes: circle or rectangle. 
 of the shape, and areas for both shapes.
 */
 public class Program2{
+
   public static void main (String [] args) {
     String shape;
     Scanner keyboard = new Scanner(System.in);
+
     System.out.print("Choose either a rectangle or a circle: "); //prompts the user to enter one of two shapes
     shape = keyboard.next();
     if (shape.equalsIgnoreCase("rectangle")){ //if user prompted rectangle, compute the perimeter and area
@@ -30,6 +32,7 @@ public class Program2{
     }
     else
       System.out.println("Invalid shape");  //if shape doesn't match description, tell the user it's invalid
+  
     System.out.println(); //skip a line
     keyboard.close();
   }
