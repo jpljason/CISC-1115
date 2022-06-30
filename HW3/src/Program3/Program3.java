@@ -27,8 +27,8 @@ public class Program3 {
 	    recordMonth = Integer.parseInt(array[1]);
 	    recordDay = Integer.parseInt(array[2]);
 	    findAgeDifference(currentYear, currentMonth, currentDay, recordYear, recordMonth, recordDay);	//Find age of record
-	    }
-	    input.close();
+		}
+		input.close();
 	}
 
 	//This method takes the dates of the record and the current date and compares them to find the age of the record. It prints a message with this age
