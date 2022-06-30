@@ -22,11 +22,11 @@ public class Program3 {
 		while (input.hasNext()) {
 			input.next();	//Skip first word in file
 			recordDate = input.next();
-	    	String [] array = recordDate.split("/");	//Split date into appropriate values
-	    	recordYear = Integer.parseInt(array[0]);	//Converting elements to integers
-	    	recordMonth = Integer.parseInt(array[1]);
-	    	recordDay = Integer.parseInt(array[2]);
-	    	findAgeDifference(currentYear, currentMonth, currentDay, recordYear, recordMonth, recordDay);	//Find age of record
+	    		String [] array = recordDate.split("/");	//Split date into appropriate values
+	    		recordYear = Integer.parseInt(array[0]);	//Converting elements to integers
+	    		recordMonth = Integer.parseInt(array[1]);
+	    		recordDay = Integer.parseInt(array[2]);
+	    		findAgeDifference(currentYear, currentMonth, currentDay, recordYear, recordMonth, recordDay);	//Find age of record
 		}
 		input.close();
 	}
