@@ -6,10 +6,12 @@ prints the factorial, sum of squares up to that integer, and the elements of the
 Fibonacci Sequence counting up to the value of the integers
 */
 public class Program1{
+
   public static void main (String[] args) throws Exception{
     int number;
     File inputfile = new File("inputfile.txt");
     Scanner input = new Scanner(inputfile);
+
     while (input.hasNext()){  //scanning file for data until it reaches end
       number = input.nextInt();
       printFactorial(number); //prints factorial
@@ -21,8 +23,9 @@ public class Program1{
     }
     input.close();
   }
-  public static void printFactorial(int n){
+
   //This method prints the factorials for the given integer
+  public static void printFactorial(int n){
     if (n<0)
       System.out.print("Invalid number for factorial"); //Scenario where there is no possible factorial for the given integer
     else {  //if integer is not less than 0, finding factorial is possible
@@ -33,9 +36,11 @@ public class Program1{
     System.out.print("1");  //last (or first) number of every possible factorial is always 1
     }
   }
-  public static void printSumOfSquares(int n){
+
   //This method prints the sum of squares up to and ending at the integer
+  public static void printSumOfSquares(int n){
     int sumOfSquares = 0;
+
     if (n<0)
       System.out.print("Invalid number for sum of squares"); //Scenario where sum of squares for this integer is impossible
     else {  //if integer is not less than 0, sum of squares is possible
@@ -45,10 +50,12 @@ public class Program1{
     System.out.print("The sum of squares up to and ending at " + n + " is " + sumOfSquares);
     }
   }
-  public static void printFibonacci(int n){
+
   //This method prints the Fibonacci Sequence up to the nth element
+  public static void printFibonacci(int n){
     int first = 1, second = 2;  //these two variables reference the two preceding numbers to be added, we start with 1 and 2 in this Fibonacci sequence
     int temp; //variable used to swap values
+
     if (n<=0)
       System.out.print("Invalid number for Fibonacci sequence");  //Scenario where Fibonacci sequence for this integer is impossible
     else if (n==1)
