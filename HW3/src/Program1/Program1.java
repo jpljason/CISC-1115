@@ -12,22 +12,22 @@ public class Program1{
     File inputfile = new File("inputfile.txt");
     Scanner input = new Scanner(inputfile);
 
-    while (input.hasNext()){  //scanning file for data until it reaches end
+    while (input.hasNext()){
       number = input.nextInt();
-      printFactorial(number); //prints factorial
-      System.out.println();   //skips line
-      printSumOfSquares(number); //prints sum of squares
-      System.out.println();   //skips line
-      printFibonacci(number); //prints Fibonacci Sequence
-      System.out.println("\n");  //skips 2 lines
+      printFactorial(number);
+      System.out.println();
+      printSumOfSquares(number);
+      System.out.println();
+      printFibonacci(number);
+      System.out.println("\n");
     }
     input.close();
   }
 
-  //This method prints the factorials for the given integer
+  //This method takes the prompted integer as input and prints the factorials for the given integer
   public static void printFactorial(int n){
     if (n<0)
-      System.out.print("Invalid number for factorial"); //Scenario where there is no possible factorial for the given integer
+      System.out.print("Invalid number for factorial");  //Scenario where there is no possible factorial for the given integer
     else {  //if integer is not less than 0, finding factorial is possible
     System.out.print("The factorial of " + n + " is ");
     for (int i = n; i > 1 ; i--){
@@ -37,12 +37,12 @@ public class Program1{
     }
   }
 
-  //This method prints the sum of squares up to and ending at the integer
+  //This method takes the prompted integer as input and prints the sum of squares up to and ending at the integer
   public static void printSumOfSquares(int n){
     int sumOfSquares = 0;
 
     if (n<0)
-      System.out.print("Invalid number for sum of squares"); //Scenario where sum of squares for this integer is impossible
+      System.out.print("Invalid number for sum of squares");  //Scenario where sum of squares for this integer is impossible
     else {  //if integer is not less than 0, sum of squares is possible
     for (int i = 0; i <= n; i++){
       sumOfSquares += i*i;  //iteratively add the squares of each number until it reaches the prompted integer
@@ -51,7 +51,7 @@ public class Program1{
     }
   }
 
-  //This method prints the Fibonacci Sequence up to the nth element
+  //This method takes the prompted integer as input and prints the Fibonacci Sequence up to that nth element
   public static void printFibonacci(int n){
     int first = 1, second = 2;  //these two variables reference the two preceding numbers to be added, we start with 1 and 2 in this Fibonacci sequence
     int temp; //variable used to swap values
@@ -66,11 +66,11 @@ public class Program1{
       System.out.print("The Fibonacci Sequence for the first " + n + " elements is 1, 2, ");
       for (int i = 3; i<=n; i++){
         if (i==n)
-          System.out.print(first+second); //if this is the last element in the sequence, print it without a comma
+          System.out.print(first+second);  //if this is the last element in the sequence, print it without a comma
         else{
           System.out.print(first+second + ", ");  //else print each element followed by a comma until it reaches the last element
           temp = first+second;  //temporary variable to hold the value of the next element to add
-          first=second; //the first number swaps to the second
+          first=second;  //the first number swaps to the second
           second=temp;  //the second number swaps to the current element in the sequence
           //now it can find the next element of the sequence by adding these next two numbers
          }
