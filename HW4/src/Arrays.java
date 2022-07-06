@@ -1,11 +1,15 @@
 import java.time.*;
 
+/*
+This program prints elements of various types of arrays. First, it prints all elements of a standard integer array. Second, it prints all elements of a String array. Third, it prints
+all elements of a 2d array and the number of rows & columns associated with this array. Finally, it prints the elements of a array of times
+*/
 public class Arrays{
 
   public static void main(String [] args) {
     String [] nth = {"first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth", "tenth"};  //Array of 10 string elements
     int [][] numbers = new int [10][20];  //Array of numbers with 10 rows and 20 columns
-    LocalTime [] time = {LocalTime.of(8,20,30), LocalTime.of(19,45,59), LocalTime.of(23,59,22)};
+    LocalTime [] time = {LocalTime.of(8,20,30), LocalTime.of(19,45,59), LocalTime.of(23,59,22)}; //Array of 3 time elements
 
     basicArray();  //Print integers array
     System.out.println("\n");
@@ -21,6 +25,7 @@ public class Arrays{
   //This method first takes no input. Then it makes an array object and stores the values of 1 through 50 for each element, then adds each element by 10. Finally, it prints each element of the array
   public static void basicArray(){
     int [] nums = new int [50];  //Make a new array containing 50 elements
+
     for (int i=1; i<=50; i++){
       nums[i-1] = i;
       nums[i-1] += 10;  //Add 10 to each element
