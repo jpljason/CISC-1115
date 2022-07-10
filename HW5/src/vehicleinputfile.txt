@@ -1,0 +1,7 @@
+  Vehicle     Speed    Time
+Lambo          180      4
+Police Car     110.5    3
+Mountain Bike  32.5     3.5
+Taxi           70       8.5
+Motorcycle     100      5
+Bus            62.5     10.2
