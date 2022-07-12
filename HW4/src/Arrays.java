@@ -1,5 +1,4 @@
 import java.time.*;
-
 /*
 This program prints elements of various types of arrays. First, it prints all elements of a standard integer array. Second, it prints all elements of a String array. Third, it prints
 all elements of a 2d array and the number of rows & columns associated with this array. Finally, it prints the elements of a array of times
@@ -36,13 +35,13 @@ public class Arrays{
     }
   }
 
-  //This method takes an array of strings as input. It prints all the string elements in that array as output
+  //This method takes an array of strings as input. It prints all the string elements in that array and the length of each element as output
   public static void printElements(String[] nth){
     for (int i=0; i<nth.length; i++){
       if(i==nth.length-1)
-        System.out.print(nth[i]);  //If element is the last element in the array, print it
+        System.out.print(nth[i] + "(length:" + nth[i].length() + " letters)");  //If element is the last element in the array, print the string and the length of the string
       else
-        System.out.print(nth[i] + ", ");  //Else, print each other element with a comma prior to it
+        System.out.print(nth[i] + "(length:" + nth[i].length() + " letters) , ");  //Else, print each other element and length of it with a comma prior to it
     }
   }
 
