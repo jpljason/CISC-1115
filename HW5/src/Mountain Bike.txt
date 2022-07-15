@@ -1,0 +1,9 @@
+Distance each hour for a Mountain Bike:
+
+Hour    Distance Traveled(miles)
+----------------------------------
+1              32.50
+2              65.00
+3              97.50
+4             113.75
+

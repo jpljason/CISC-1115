@@ -1,0 +1,9 @@
+Distance each hour for a Lambo:
+
+Hour    Distance Traveled(miles)
+----------------------------------
+1             180.00
+2             360.00
+3             540.00
+4             720.00
+

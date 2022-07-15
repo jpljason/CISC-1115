@@ -1,0 +1,4 @@
+Distance each hour for a Plane:
+
+Invalid values for time and speed!
+

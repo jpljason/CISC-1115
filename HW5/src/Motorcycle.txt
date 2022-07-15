@@ -1,0 +1,10 @@
+Distance each hour for a Motorcycle:
+
+Hour    Distance Traveled(miles)
+----------------------------------
+1             100.00
+2             200.00
+3             300.00
+4             400.00
+5             500.00
+

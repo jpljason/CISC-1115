@@ -1,0 +1,8 @@
+Distance each hour for a Police Car:
+
+Hour    Distance Traveled(miles)
+----------------------------------
+1             110.50
+2             221.00
+3             331.50
+
