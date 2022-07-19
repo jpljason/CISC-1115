@@ -1,5 +1,6 @@
 import java.util.Scanner;
-import java.io.*;
+import java.io.File;
+import java.io.PrintStream;
 /*
 This program takes vehicle type(s), speed(mph), and time(hours) for that vehicle and prints a chart indicating the distance traveled(in miles) each hour by that vehicle
 */
@@ -11,7 +12,7 @@ public class Vehicle{
     File inputfile = new File("vehicleinputfile.txt");  //file to be used for input values
     Scanner input = new Scanner(inputfile);
 
-    while(input.hasNextLine()){
+    while(input.hasNextLine()){  //takes data from input file
       input.nextLine();
       vehicle=input.next();
       while(!input.hasNextDouble()){  //makes sure the Scanner takes in all the tokens of the vehicle's name if it has spaces
