@@ -4,6 +4,7 @@
 - The MonthDays class labeled as MonthDays.java
 - The custom exception class called MonthException labeled as MonthException.java
 - The Main class labeled as Main.java which runs the main program for HW6
+
 **Please make sure to open all class files so the main program can work!**
 
 
