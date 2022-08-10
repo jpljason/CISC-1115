@@ -8,7 +8,7 @@ public class Calculator{
     String expression;  //variable for the entire expression
     Scanner keyboard=new Scanner(System.in);
 
-    System.out.print("Enter the math expression(Number followed by operator followed by number): ");
+    System.out.print("Enter the math expression(Enter done when you are finished): ");
     expression=keyboard.nextLine().replaceAll("\\s","");  //assign expression and remove any spaces
     while(!expression.equalsIgnoreCase("done")){  //while expression is not sentinel value ("done")
       boolean invalidExpression=false;  //variable to determine whether expression is valid
@@ -38,7 +38,7 @@ public class Calculator{
       else{
         System.out.println("Invalid expression!");  //else, tell the user it is an invalid expression
       }
-      System.out.print("Enter the math expression(Number followed by operator followed by number): ");  //go back to beginning of loop
+      System.out.print("Enter the math expression(Enter done when you are finished): ");  //go back to beginning of loop
       expression=keyboard.nextLine().replaceAll("\\s","");
     }
     System.out.println("Program halted!");  //tell user the program is finished after they enter "done" for the expression
